@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+</head>
+
+<body>
+    <h1>Emotion Detection Application</h1>
+
+    <label for="textToAnalyze">
+        Enter a statement to analyze:
+    </label>
+
+    <br><br>
+
+    <input
+        type="text"
+        id="textToAnalyze"
+        placeholder="Enter your statement"
+    >
+
+    <button onclick="runEmotionDetection()">
+        Analyze Emotion
+    </button>
+
+    <br><br>
+
+    <div id="system_response"></div>
+</body>
+</html>
